@@ -1,0 +1,23 @@
+# THIS EXAMPLE ENV-VARS NEEDS TO BE MODIFIED. PLEASE SET ALL THE UPPER_CASE VARIABLES
+#####################################################################################
+
+### authentication details
+export TF_VAR_tenancy_ocid="<TENANCY_OCID_FROM_OCI>"
+export TF_VAR_user_ocid="<USER_OCID_FROM_OCI>"
+export TF_VAR_fingerprint="<USER_FINGERPRINT_SSH_PASS_FROM_OCI>"
+export TF_VAR_private_key_path="<PATH_TO_THE_FINGERPRINTED_OCI_CERT>"
+
+### region
+export TF_VAR_region="<REGION_TO_USE_IN_OCI>"
+
+### compartment
+export TF_VAR_compartment_ocid="<COMARTMENT_OCID_FROM_OCI>"
+
+### public/private keys used on the instance
+export TF_VAR_ssh_public_key=$(cat <PATH_TO_SSHKEY_NEW_SERVER.pub>) # PATH TO SSH_KEYS FOR CREATED SERVERS
+export TF_VAR_ssh_private_key=$(cat <PATH_TO_SSHKEY_NEW_SERVER>)	# PATH TO SSH_KEYS FOR CREATED SERVERS
+
+
+
+## NOTE: These are not your api keys. More info on the right keys see
+## https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/managingkeypairs.htm
