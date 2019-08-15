@@ -3,6 +3,8 @@ data "oci_identity_availability_domain" "ad" {
   ad_number      = 1
 }
 
+
+# this is for scaling infrastructure but actually not implemented in practice example
 /*
 data "oci_core_instance_devices" "TFInstanceDevices" {
   count       = "${var.NumInstances}"
